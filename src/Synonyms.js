@@ -1,11 +1,11 @@
 import React from "react";
 
 export default function Synonyms(props) {
-  if (props.userSynonyms) {
+  if (props.userSynonyms && props.userSynonyms.length > 0) {
     return (
       <ul className="Synonyms">
         <br />
-        <strong>Synonyms: </strong>
+        <strong className="Highlight">Synonyms: </strong>
         {props.userSynonyms.map(function (eachSynonym, index) {
           return <li key={index}>{eachSynonym}</li>;
         })}

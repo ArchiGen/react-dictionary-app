@@ -6,7 +6,7 @@ export default function Result(container) {
   //console.log(container.mydata);
   if (container.mydata) {
     return (
-      <div className="Results">
+      <div className="Results Section">
         <h2>{container.mydata.word}</h2>
         {container.mydata.phonetics.map(function (eachPhonetic, index) {
           return (
