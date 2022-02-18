@@ -5,7 +5,8 @@ export default function Example(props) {
     return (
       <div className="Example">
         <div>
-          <strong className="Highlight">Example:</strong> {props.examples}{" "}
+          <strong className="Highlight">Example:</strong>
+          <span id="example"> {props.examples} </span>
         </div>
       </div>
     );

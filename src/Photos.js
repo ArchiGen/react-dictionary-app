@@ -11,14 +11,22 @@ export default function Photos(props) {
           {props.pexelData.map(function (eachPhoto, index) {
             return (
               <div className="col-4" key={index}>
-                <img
-                  size={200}
-                  src={eachPhoto.src.landscape}
-                  className="img-fluid"
-                />
+                <a
+                  href={eachPhoto.src.original}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    size={200}
+                    src={eachPhoto.src.landscape}
+                    className="img-fluid"
+                    alt="users-word"
+                  />
+                </a>
               </div>
             );
           })}
+        </div>
       </div>
     );
   } else {
