@@ -54,6 +54,7 @@ footer {
   display: block;
   text-align: center;
   margin: 70px auto 50px auto;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .Search {
